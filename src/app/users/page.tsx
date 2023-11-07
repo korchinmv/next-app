@@ -1,6 +1,6 @@
 import UsersList from "@/components/UsersList";
 
-import { Metadata } from "next";
+import { Metadata, NextPage } from "next";
 
 export const metadata: Metadata = {
   title: "Users page",
@@ -14,7 +14,7 @@ const getUsers = async () => {
   return res.json();
 };
 
-const UsersPage = async () => {
+const UsersPage: NextPage = async () => {
   const dataUsers = await getUsers();
   return <UsersList users={dataUsers} />;
 };

@@ -1,6 +1,8 @@
+import { FC } from "react";
+
 import Link from "next/link";
 
-const Header = () => {
+const Header: FC = () => {
   return (
     <header className='bg-zinc-900 p-8'>
       <div className='container mx-auto'>

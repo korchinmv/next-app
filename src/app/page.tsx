@@ -1,9 +1,12 @@
 import Title from "@/components/Title";
+import { getTitle } from "@/utils/getTitle";
 
 import { Metadata } from "next";
 
+const title = getTitle("Home page");
+
 export const metadata: Metadata = {
-  title: "Home page",
+  title,
   description: "Home",
 };
 

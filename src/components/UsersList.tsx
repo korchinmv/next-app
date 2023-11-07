@@ -14,7 +14,7 @@ const UsersList = ({ users }: Props) => {
             className='p-5 cursor-pointer border border-sky-500 hover:shadow-xl transition-shadow ease-in delay-50'
             key={user.id}
           >
-            <Link href={`/users/${user.name}`}>
+            <Link href={`/users/${user.id}`}>
               <h3 className=''>{user.name}</h3>
               <p className=''>{user.email}</p>
               <p className=''>{user.phone}</p>
